@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>:(</title>
+  <meta charset="UTF-8">
+  <title>Video Page</title>
+  <style>
+    body {
+      margin: 0;
+      background: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
 
-    <link rel="icon" href="favicon.png" type="image/png">>
-    <link rel="stylesheet" href="css/style.css">
+    video {
+      max-width: 90%;
+      max-height: 90%;
+    }
+  </style>
 </head>
 <body>
 
-    <video id="videoPlayer" controls autoplay>
-        <source src="video/1.mp4" type="video/mp4">
-        Your browser does not support MP4 playback.
-    </video>
+  <video autoplay muted loop playsinline>
+    <source src="/video/1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 
-    <script src="js/script.js"></script>
-    <script src="js/titles.js"></script>
 </body>
 </html>
