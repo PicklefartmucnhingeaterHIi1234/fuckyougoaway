@@ -1,3 +1,4 @@
-const video = document.getElementById("videoPlayer");
-
-video.volume = 0.1;
+document.addEventListener("DOMContentLoaded", function () {
+    const video = document.getElementById("player");
+    video.volume = 0.3; // 30% volume
+});
